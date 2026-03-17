@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>U-Scan — Smart Goods Scanner</title>
+  <link rel="shortcut icon" href="./image/uscan logo.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style (1).css">
+</head>
+<body>
+
+<!-- ══ LOADING SCREEN ══════════════════════════════ -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">
+      <img src="./image/uscan logo.png" alt="">
+    </div>
+    <div class="loader-brand">U-SCAN</div>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    <div class="loader-text">Initialising scanner…</div>
+  </div>
+</div>
+
+<!-- ══ NAV ════════════════════════════════════════ -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">
+    <div class="nav-logo-icon">
+      <img src="./image/uscan logo.png" alt="">
+    </div>
+    <span class="nav-logo-text">U-SCAN</span>
+  </a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#scanner">Scanner</a></li>
+    <li><a href="#how">How it works</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="nav-cta" onclick="smoothScroll('scanner')">Try Free</button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══ HERO ═══════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-bg-orb orb-1"></div>
+  <div class="hero-bg-orb orb-2"></div>
+  <div class="hero-left reveal">
+    <div class="hero-badge"><span class="hero-badge-dot"></span>No barcode? No problem.</div>
+    <h1>Scan any good,<br><span>instantly price it.</span></h1>
+    <p class="hero-sub">Label your goods with cellotape & a price tag. U-Scan reads them with your camera and calculates your total in seconds.</p>
+    <div class="hero-btns">
+      <a href="#scanner" class="btn-primary">Start Scanning</a>
+      <a href="#how" class="btn-outline">See How It Works</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item"><div class="stat-num"><span class="count" data-target="3">0</span><small>s</small></div><p>Avg scan time</p></div>
+      <div class="stat-item"><div class="stat-num"><span class="count" data-target="99">0</span><small>%</small></div><p>Accuracy rate</p></div>
+      <div class="stat-item"><div class="stat-num">Free</div><p>To get started</p></div>
+    </div>
+  </div>
+  <div class="hero-right reveal reveal-delay">
+    <div class="hero-phone-mock">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <div class="scan-frame">
+          <div class="scan-line"></div>
+          <div class="scan-corners"><span></span></div>
+        </div>
+        <div class="phone-label">📦 ₦1,200 detected</div>
+      </div>
+    </div>
+    <div class="floating-card fc-left"><strong>3 items scanned</strong><span>Total: ₦4,800</span></div>
+    <div class="floating-card fc-right"><strong>Rice — ₦2,500</strong><span>Added ✓</span></div>
+  </div>
+</section>
+
+<!-- ══ FEATURES ═══════════════════════════════════ -->
+<section class="features" id="features">
+  <div class="section-header reveal">
+    <p class="section-label">Why U-Scan</p>
+    <h2>Built for the real market</h2>
+    <p class="section-sub">No barcodes, no scanners, no internet required — just your camera and a price sticker.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card reveal"><div class="feature-icon"><img src="./image/camera.png" alt=""></div><h3>Camera scanning</h3><p>Use your device camera to capture handwritten or printed price labels on goods.</p></div>
+    <div class="feature-card reveal"><div class="feature-icon"><img src="./image/tape.png" alt=""></div><h3>Cellotape labels</h3><p>Write prices on paper, stick with cellotape — U-Scan reads them just fine.</p></div>
+    <div class="feature-card reveal"><div class="feature-icon"><img src="./image/calculator (1).png" alt=""></div><h3>Auto totaling</h3><p>Every scanned item adds to your running total. No manual addition needed.</p></div>
+    <div class="feature-card reveal"><div class="feature-icon"><img src="./image/reciept.png" alt=""></div><h3>Receipt export</h3><p>Print or share a clean receipt with all items and total when you're done.</p></div>
+    <div class="feature-card reveal"><div class="feature-icon"><img src="./image/cell-phone.png" alt=""></div><h3>Works on mobile</h3><p>Fully optimized for phones and tablets. Use it anywhere in your shop.</p></div>
+    <div class="feature-card reveal"><div class="feature-icon"><img src="./image/flash.png" alt=""></div><h3>Offline ready</h3><p>No internet? No problem. U-Scan works completely offline in your browser.</p></div>
+  </div>
+</section>
+
+<!-- ══ SCANNER APP ════════════════════════════════ -->
+<section class="scanner-section" id="scanner">
+  <div class="section-header reveal">
+    <p class="section-label">Live App</p>
+    <h2>Start scanning right now</h2>
+    <p class="section-sub">Point your camera at any labeled good, enter the item name and price, and watch your total grow.</p>
+  </div>
+  <div class="app-wrapper reveal">
+    <div class="app-toolbar">
+      <span class="app-toolbar-title">U-Scan — Goods Scanner</span>
+      <span class="app-toolbar-badge" id="item-count-badge">0 items</span>
+    </div>
+    <div class="app-body">
+
+      <!-- ── Camera panel ── -->
+      <div class="camera-panel">
+
+        <!-- Live video feed -->
+        <div class="video-wrap" id="video-wrap">
+          <video id="video-feed" autoplay playsinline></video>
+
+          <!-- Scan overlay with targeting frame -->
+          <div id="scan-overlay">
+            <div class="corner tl"></div>
+            <div class="corner tr"></div>
+            <div class="corner bl"></div>
+            <div class="corner br"></div>
+            <div class="scan-line"></div>
+            <div class="scan-label-hint">Align price label here</div>
+          </div>
+
+          <!-- Torch / flash toggle -->
+          <button class="torch-btn" id="torch-btn" onclick="toggleTorch()" title="Toggle light">
+            💡
+          </button>
+
+          <!-- Zoom slider -->
+          <div class="zoom-wrap" id="zoom-wrap">
+            <span class="zoom-icon">🔍</span>
+            <input type="range" id="zoom-slider" min="1" max="3" step="0.1" value="1" oninput="setZoom(this.value)">
+            <span id="zoom-label">1×</span>
+          </div>
+        </div>
+
+        <!-- Placeholder before camera starts -->
+        <div class="camera-placeholder" id="camera-placeholder">
+          <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+            <rect x="6" y="14" width="40" height="30" rx="5" stroke="#4ECBA0" stroke-width="2"/>
+            <circle cx="26" cy="29" r="8" stroke="#4ECBA0" stroke-width="2"/>
+            <path d="M18 14l4-6h8l4 6" stroke="#4ECBA0" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M36 20h4" stroke="#4ECBA0" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span>Camera will appear here</span>
+          <span class="cam-hint">Write price tag clearly in CAPITAL LETTERS<br>e.g.&nbsp;&nbsp;<strong>RICE 5KG — 2500</strong></span>
+        </div>
+
+        <!-- OCR status bar -->
+        <div class="ocr-status" id="ocr-status"></div>
+
+        <!-- Captured preview + result -->
+        <div class="capture-preview" id="capture-preview">
+          <canvas id="capture-canvas"></canvas>
+          <div class="ocr-result" id="ocr-result">
+            <div class="ocr-result-row">
+              <span class="ocr-lbl">Detected text</span>
+              <span class="ocr-raw" id="ocr-raw-text">—</span>
+            </div>
+            <div class="ocr-result-row">
+              <span class="ocr-lbl">Name read</span>
+              <span class="ocr-val" id="ocr-name-preview">—</span>
+            </div>
+            <div class="ocr-result-row">
+              <span class="ocr-lbl">Price read</span>
+              <span class="ocr-val accent" id="ocr-price-preview">—</span>
+            </div>
+            <button class="btn-rescan" onclick="rescan()">🔄 Rescan</button>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="camera-controls">
+          <button id="start-camera-btn" onclick="startCamera()">📷 Start Camera</button>
+          <button id="capture-btn" onclick="captureFrame()" style="display:none">⚡ Scan Label</button>
+        </div>
+
+      </div>
+
+      <!-- ── Form panel ── -->
+      <div class="form-panel">
+        <h3>Scanned item details</h3>
+
+        <div class="ocr-confidence" id="ocr-confidence" style="display:none">
+          <div class="conf-bar-wrap"><div class="conf-bar" id="conf-bar"></div></div>
+          <span id="conf-label">OCR confidence: 0%</span>
+        </div>
+
+        <div class="input-group">
+          <label for="item-name">Item name <span class="auto-tag" id="name-auto-tag"></span></label>
+          <input type="text" id="item-name" placeholder="e.g. Rice 5kg, Tomato paste…" autocomplete="off"/>
+        </div>
+        <div class="input-row">
+          <div class="input-group">
+            <label for="item-price">Price (₦) <span class="auto-tag" id="price-auto-tag"></span></label>
+            <input type="number" id="item-price" placeholder="0.00" min="0" step="0.01"/>
+          </div>
+          <div class="input-group">
+            <label for="item-qty">Qty</label>
+            <input type="number" id="item-qty" placeholder="1" min="1" value="1"/>
+          </div>
+        </div>
+        <button id="add-item-btn" onclick="addItem()">+ Add to list</button>
+
+        <!-- Tips -->
+        <div class="scan-tips">
+          <p class="tips-title">📝 For best scan results:</p>
+          <ul>
+            <li>Write in <strong>CAPITAL LETTERS</strong></li>
+            <li>Format: <strong>NAME — PRICE</strong></li>
+            <li>Example: <strong>RICE 5KG — 2500</strong></li>
+            <li>Good lighting, flat label, camera close</li>
+          </ul>
+        </div>
+
+        <div class="items-list">
+          <h4>Scanned items</h4>
+          <div id="items-container"><div class="empty-state">No items yet. Scan a good to begin.</div></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="total-bar">
+      <div>
+        <div class="total-label">Total amount</div>
+        <div class="total-amount" id="total-display">₦0.00</div>
+        <div class="total-count" id="total-count">0 items</div>
+      </div>
+      <div class="total-actions">
+        <button id="clear-btn" onclick="clearAll()">Clear all</button>
+        <button id="print-btn" onclick="showReceipt()">View Receipt</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ HOW IT WORKS ═══════════════════════════════ -->
+<section class="how-section" id="how">
+  <div class="section-header reveal">
+    <p class="section-label">Simple process</p>
+    <h2>Three steps to checkout</h2>
+    <p class="section-sub">No training required. Anyone can use U-Scan in under a minute.</p>
+  </div>
+  <div class="steps-grid">
+    <div class="step-item reveal"><div class="step-num">1</div><h4>Label your goods</h4><p>Write the item name & price on paper, attach with cellotape to each product.</p></div>
+    <div class="step-item reveal"><div class="step-num">2</div><h4>Scan with camera</h4><p>Open U-Scan, point your camera at each label and tap capture.</p></div>
+    <div class="step-item reveal"><div class="step-num">3</div><h4>Get your total</h4><p>All items add up automatically. Print or share the receipt when done.</p></div>
+    <div class="step-item reveal"><div class="step-num">4</div><h4>Clear & repeat</h4><p>Start a new session for the next customer with one tap.</p></div>
+  </div>
+</section>
+
+<!-- ══ PRICING ════════════════════════════════════ -->
+<section class="pricing-section" id="pricing">
+  <div class="section-header reveal">
+    <p class="section-label">Pricing</p>
+    <h2>Plans for every seller</h2>
+    <p class="section-sub">Start free. Upgrade when you need more.</p>
+  </div>
+  <div class="pricing-grid">
+    <div class="price-card reveal">
+      <div class="price-name">Starter</div>
+      <h3>Free <span>/ forever</span></h3>
+      <p class="price-sub">Perfect for small shops getting started</p>
+      <ul class="price-features">
+        <li>Up to 50 scans/day</li><li>Camera scanning</li><li>Manual item entry</li><li>Basic receipt</li>
+      </ul>
+      <button class="price-btn" onclick="smoothScroll('scanner')">Get started free</button>
+    </div>
+    <div class="price-card featured reveal">
+      <div class="price-badge">Most popular</div>
+      <div class="price-name">Pro</div>
+      <h3>₦2,500 <span>/ month</span></h3>
+      <p class="price-sub">For growing businesses and markets</p>
+      <ul class="price-features">
+        <li>Unlimited scans</li><li>AI label reading</li><li>Sales history & reports</li><li>Branded receipts</li><li>Multi-device access</li>
+      </ul>
+      <button class="price-btn" onclick="openPayment('Pro','2,500')">Subscribe — ₦2,500/mo</button>
+    </div>
+    <div class="price-card reveal">
+      <div class="price-name">Enterprise</div>
+      <h3>₦8,000 <span>/ month</span></h3>
+      <p class="price-sub">For supermarkets and large retailers</p>
+      <ul class="price-features">
+        <li>Everything in Pro</li><li>Multiple staff accounts</li><li>Inventory management</li><li>API access</li><li>Priority support</li>
+      </ul>
+      <button class="price-btn" onclick="openPayment('Enterprise','8,000')">Subscribe — ₦8,000/mo</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ════════════════════════════════════════ -->
+<section class="cta-section">
+  <div class="cta-inner reveal">
+    <h2>Ready to scan smarter?</h2>
+    <p>Join thousands of market sellers already using U-Scan.</p>
+    <div class="cta-btns">
+      <a href="#scanner" class="btn-primary">Start for free</a>
+      <a href="#how" class="btn-outline btn-outline-light">Learn more</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═════════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="nav-logo">
+        <div class="nav-logo-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <circle cx="11" cy="11" r="10" fill="#1A4A3A"/>
+            <path d="M7 9.5V13.5C7 14.3 7.6 14.5 8 14.5H14C14.4 14.5 15 14.3 15 13.5V9.5" stroke="#4ECBA0" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M8.5 7H13.5" stroke="#4ECBA0" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M10 7V9.5M12 7V9.5" stroke="#4ECBA0" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="nav-logo-text">U-SCAN</span>
+      </a>
+      <p>Smart scanning for everyday sellers. Label it, scan it, total it — in seconds.</p>
+    </div>
+    <div class="footer-col"><h4>Product</h4><ul><li><a href="#features">Features</a></li><li><a href="#scanner">Try Scanner</a></li><li><a href="#pricing">Pricing</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="#">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Get in touch</h4><ul><li><a href="/cdn-cgi/l/email-protection#5038353c3c3f10252333313e7e312020"><span class="__cf_email__" data-cfemail="a1c9c4cdcdcee1d4d2c2c0cf8fc0d1d1">[email&#160;protected]</span></a></li><li><a href="#">WhatsApp</a></li><li><a href="#">Support</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 U-Scan. All rights reserved.</p>
+    <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms</a></div>
+  </div>
+</footer>
+
+<!-- ══ RECEIPT MODAL ══════════════════════════════ -->
+<div class="modal-overlay" id="receipt-modal">
+  <div class="modal-card receipt-card">
+    <button class="modal-close" onclick="closeReceipt()">✕</button>
+    <div class="receipt-header">
+      <div class="receipt-brand">U-SCAN</div>
+      <div class="receipt-date" id="receipt-date"></div>
+    </div>
+    <div class="receipt-items" id="receipt-items"></div>
+    <div class="receipt-actions">
+      <button class="btn-ghost" onclick="closeReceipt()">Close</button>
+      <button class="btn-primary" onclick="window.print()">🖨️ Print</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ PAYMENT MODAL ══════════════════════════════ -->
+<div class="modal-overlay" id="payment-modal">
+  <div class="modal-card payment-card">
+    <button class="modal-close" onclick="closePayment()">✕</button>
+    <div class="payment-header">
+      <div class="payment-icon">💳</div>
+      <h3 id="payment-title">Subscribe to Pro</h3>
+      <p class="payment-price" id="payment-price">₦2,500 / month</p>
+    </div>
+    <div class="pay-progress">
+      <div class="pay-dot active" id="dot-1"></div>
+      <div class="pay-line"></div>
+      <div class="pay-dot" id="dot-2"></div>
+      <div class="pay-line"></div>
+      <div class="pay-dot" id="dot-3"></div>
+    </div>
+
+    <!-- Step 1 -->
+    <div class="pay-step active" id="pay-step-1">
+      <p class="step-caption">Step 1 of 2 — Make your transfer</p>
+      <div class="bank-card">
+        <div class="bank-row"><span class="bk">Bank</span><span class="bv">OPay</span></div>
+        <div class="bank-row"><span class="bk">Account name</span><span class="bv">Ukemezie Nonso Jude</span></div>
+        <div class="bank-row accent-row">
+          <span class="bk">Account number</span>
+          <span class="bv acct-num">8088669148 <button class="copy-btn" onclick="copyAcct(this)">Copy</button></span>
+        </div>
+        <div class="bank-row"><span class="bk">Amount</span><span class="bv amount-accent" id="transfer-amount">₦2,500</span></div>
+      </div>
+      <div class="pay-notice">
+        <svg width="15" height="15" viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="6.5" stroke="#4ECBA0" stroke-width="1.4"/><path d="M7.5 4.5v4M7.5 10v.5" stroke="#4ECBA0" stroke-width="1.4" stroke-linecap="round"/></svg>
+        Transfer the exact amount shown, then click Next.
+      </div>
+      <button class="btn-primary w-full" onclick="goStep(2)">I've made the transfer →</button>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="pay-step" id="pay-step-2">
+      <p class="step-caption">Step 2 of 2 — Confirm your payment</p>
+      <div class="input-group"><label>Your full name</label><input type="text" id="pay-name" placeholder="e.g. John Doe"/></div>
+      <div class="input-group"><label>Email address</label><input type="email" id="pay-email" placeholder="you@example.com"/></div>
+      <div class="input-group"><label>Transfer reference or last 4 digits of your account</label><input type="text" id="pay-ref" placeholder="e.g. 1234 or TRF-XXXXXXXXX"/></div>
+      <div class="pay-notice">
+        <svg width="15" height="15" viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="6.5" stroke="#4ECBA0" stroke-width="1.4"/><path d="M7.5 4.5v4M7.5 10v.5" stroke="#4ECBA0" stroke-width="1.4" stroke-linecap="round"/></svg>
+        Your plan activates within 1–2 hours after we verify your transfer.
+      </div>
+      <div class="step-row">
+        <button class="btn-ghost" onclick="goStep(1)">← Back</button>
+        <button class="btn-primary" onclick="submitPayment()">Submit confirmation</button>
+      </div>
+    </div>
+
+    <!-- Step 3 success -->
+    <div class="pay-step" id="pay-step-3">
+      <div class="pay-success">
+        <div class="success-anim">✅</div>
+        <h4>Payment submitted!</h4>
+        <p>Thank you! Your <span id="success-plan" class="success-plan"></span> plan will be activated within <strong>1–2 hours</strong>.</p>
+        <p class="success-note" id="success-note"></p>
+        <button class="btn-primary w-full" style="margin-top:20px" onclick="clo
+sePayment()">Back to U-Scan</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tesseract.js OCR engine -->
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+<script src="./app (1).js"></script>
+</body>
+</html>
