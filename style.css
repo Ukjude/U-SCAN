@@ -32,16 +32,16 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Figtree', sans-serif;
   background: var(--white);
   color: var(--body);
   overflow-x: hidden;
   line-height: 1.6;
 }
-h1,h2,h3,h4 { font-family: 'Syne', sans-serif; line-height: 1.15; }
+h1,h2,h3,h4 { font-family: 'Bricolage Grotesque', sans-serif; line-height: 1.15; }
 img { max-width: 100%; display: block; }
 a { text-decoration: none; color: inherit; }
-button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
+button { cursor: pointer; font-family: 'Figtree', sans-serif; }
 
 /* ── LOADER ───────────────────────────────────── */
 #loader {
@@ -72,7 +72,7 @@ button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
   to   { transform: scale(1.08); opacity: .85; }
 }
 .loader-brand {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Bricolage Grotesque', sans-serif;
   font-size: 26px; font-weight: 800;
   color: var(--white); letter-spacing: .1em;
 }
@@ -136,7 +136,7 @@ button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
   border-radius: 10px;
 }
 .nav-logo-text {
-  font-family: 'Syne', sans-serif; font-weight: 700;
+  font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700;
   font-size: 18px; color: var(--white); letter-spacing: .05em;
   white-space: nowrap;
 }
@@ -164,7 +164,7 @@ button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
   background: var(--m500); color: var(--g800);
   border: none; border-radius: var(--radius-sm);
   padding: 10px 22px;
-  font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px;
+  font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 14px;
   transition: background var(--transition), transform var(--transition);
   white-space: nowrap;
 }
@@ -214,7 +214,7 @@ button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
   background: var(--g800); color: var(--white);
   border: none; border-radius: var(--radius-sm);
   padding: 14px 28px;
-  font-family: 'Syne', sans-serif; font-weight: 700; font-size: 15px;
+  font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 15px;
   transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
 }
 .btn-primary:hover {
@@ -227,7 +227,7 @@ button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
   background: transparent; color: var(--g800);
   border: 2px solid var(--g800); border-radius: var(--radius-sm);
   padding: 12px 26px;
-  font-family: 'Syne', sans-serif; font-weight: 700; font-size: 15px;
+  font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 15px;
   transition: all var(--transition);
 }
 .btn-outline:hover { background: var(--g800); color: var(--white); }
@@ -239,7 +239,7 @@ button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
   background: var(--m50); color: var(--g800);
   border: none; border-radius: var(--radius-sm);
   padding: 12px 22px;
-  font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px;
+  font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 14px;
   transition: background var(--transition);
 }
 .btn-ghost:hover { background: var(--m100); }
@@ -306,7 +306,7 @@ button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
 .stat-item { display: flex; flex-direction: column; gap: 4px; }
 .stat-num {
   display: flex; align-items: baseline; gap: 2px;
-  font-family: 'Syne', sans-serif; font-size: clamp(22px,3vw,30px);
+  font-family: 'Bricolage Grotesquene', sans-serif; font-size: clamp(22px,3vw,30px);
   font-weight: 800; color: var(--g800);
 }
 .stat-num small { font-size: .6em; font-weight: 600; color: var(--m500); }
@@ -443,11 +443,11 @@ button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
   background: var(--g800); padding: 16px 24px;
   display: flex; align-items: center; justify-content: space-between; gap: 12px;
 }
-.app-toolbar-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: clamp(14px,2vw,18px); color: var(--white); }
+.app-toolbar-title { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(14px,2vw,18px); color: var(--white); }
 .app-toolbar-badge {
   background: var(--m500); color: var(--g800);
   border-radius: 6px; padding: 4px 12px;
-  font-family: 'Syne', sans-serif; font-size: 12px; font-weight: 700; white-space: nowrap;
+  font-family: 'Bricolage Grotesque', sans-serif; font-size: 12px; font-weight: 700; white-space: nowrap;
 }
 .app-body { display: grid; grid-template-columns: 1fr 1fr; min-height: 460px; }
 
@@ -485,7 +485,7 @@ button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
 .camera-controls { display: flex; gap: 10px; width: 100%; }
 #start-camera-btn, #capture-btn {
   flex: 1; padding: 11px; border-radius: 10px; border: none;
-  font-family: 'Syne', sans-serif; font-weight: 700; font-size: 13px;
+  font-family: 'Bricolage Grotesquee', sans-serif; font-weight: 700; font-size: 13px;
   transition: all var(--transition);
 }
 #start-camera-btn { background: var(--m500); color: var(--g800); }
@@ -511,7 +511,7 @@ button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
 .input-group input {
   border: 1.5px solid var(--bdr); border-radius: 8px;
   padding: 10px 14px; font-size: 14px; color: var(--g800);
-  font-family: 'DM Sans', sans-serif; outline: none;
+  font-family: 'Figtree', sans-serif; outline: none;
   transition: border-color var(--transition), box-shadow var(--transition);
 }
 .input-group input:focus {
@@ -522,7 +522,7 @@ button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
 #add-item-btn {
   background: var(--g800); color: var(--white);
   border: none; border-radius: 10px; padding: 13px;
-  font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px;
+  font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 14px;
   transition: background var(--transition), transform var(--transition);
 }
 #add-item-btn:hover { background: var(--g700); transform: translateY(-1px); }
@@ -542,7 +542,7 @@ button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
 .item-info { flex: 1; min-width: 0; }
 .item-info strong { display: block; font-size: 14px; color: var(--g800); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .item-info span   { font-size: 12px; color: var(--muted); }
-.item-price { font-family: 'Syne', sans-serif; font-weight: 700; color: var(--g800); font-size: 14px; white-space: nowrap; }
+.item-price { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; color: var(--g800); font-size: 14px; white-space: nowrap; }
 .item-remove {
   background: none; border: none; color: #cc4444;
   font-size: 16px; padding: 2px 6px; border-radius: 4px;
@@ -557,20 +557,20 @@ button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
   display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
 }
 .total-label  { color: var(--m200); font-size: 13px; font-weight: 500; }
-.total-amount { font-family: 'Syne', sans-serif; font-size: clamp(20px,3vw,28px); font-weight: 800; color: var(--white); }
+.total-amount { font-family: 'Bricolage Grotesque', sans-serif; font-size: clamp(20px,3vw,28px); font-weight: 800; color: var(--white); }
 .total-count  { color: var(--m200); font-size: 12px; }
 .total-actions { display: flex; gap: 10px; }
 #clear-btn {
   background: rgba(255,255,255,.1); color: var(--m200);
   border: 1px solid rgba(78,203,160,.25); border-radius: 8px;
-  padding: 10px 16px; font-family: 'Syne', sans-serif;
+  padding: 10px 16px; font-family: 'Bricolage Grotesque', sans-serif;
   font-weight: 700; font-size: 13px;
   transition: background var(--transition);
 }
 #clear-btn:hover { background: rgba(255,255,255,.18); }
 #print-btn {
   background: var(--m500); color: var(--g800); border: none; border-radius: 8px;
-  padding: 10px 16px; font-family: 'Syne', sans-serif;
+  padding: 10px 16px; font-family: 'Bricolage Grotesque', sans-serif;
   font-weight: 700; font-size: 13px;
   transition: background var(--transition);
 }
@@ -603,7 +603,7 @@ button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
   width: 64px; height: 64px; border-radius: 50%;
   background: var(--g800); color: var(--white);
   display: flex; align-items: center; justify-content: center;
-  font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 800;
+  font-family: 'Bricolage Grotesque', sans-serif; font-size: 22px; font-weight: 800;
   position: relative; z-index: 1;
   border: 4px solid var(--m50);
   box-shadow: 0 0 0 2.5px var(--m500);
@@ -654,7 +654,7 @@ button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
   position: absolute; top: -13px; left: 50%; transform: translateX(-50%);
   background: var(--m500); color: var(--g800);
   border-radius: 99px; padding: 4px 16px;
-  font-size: 12px; font-weight: 700; font-family: 'Syne', sans-serif; white-space: nowrap;
+  font-size: 12px; font-weight: 700; font-family: 'Bricolage Grotesque', sans-serif; white-space: nowrap;
 }
 .price-name {
   font-size: 12px; font-weight: 700; color: var(--m400);
@@ -673,7 +673,7 @@ button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
 .price-features li::before { content: '✓'; color: var(--m500); font-weight: 700; flex-shrink: 0; }
 .price-btn {
   width: 100%; padding: 13px; border-radius: 10px; border: none;
-  font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px;
+  font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 14px;
   background: rgba(78,203,160,.15); color: var(--m500);
   transition: background var(--transition), transform var(--transition);
 }
@@ -710,7 +710,7 @@ footer { background: var(--g800); padding: clamp(48px,6vw,72px) clamp(16px,5vw,6
   margin-bottom: 48px;
 }
 .footer-brand p { color: var(--m200); font-size: 14px; line-height: 1.7; margin-top: 14px; max-width: 260px; }
-.footer-col h4 { font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 16px; }
+.footer-col h4 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 16px; }
 .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
 .footer-col a { color: var(--m200); font-size: 14px; transition: color var(--transition); }
 .footer-col a:hover { color: var(--m500); }
@@ -766,14 +766,14 @@ footer { background: var(--g800); padding: clamp(48px,6vw,72px) clamp(16px,5vw,6
 
 /* Receipt modal */
 .receipt-header { text-align: center; padding-bottom: 20px; border-bottom: 2px dashed var(--bdr); margin-bottom: 20px; }
-.receipt-brand { font-family: 'Syne', sans-serif; font-size: 26px; font-weight: 800; color: var(--g800); }
+.receipt-brand { font-family: 'Bricolage Grotesque', sans-serif; font-size: 26px; font-weight: 800; color: var(--g800); }
 .receipt-date  { font-size: 12px; color: var(--muted); margin-top: 4px; }
 .receipt-items { margin-bottom: 20px; }
 .receipt-row   { display: flex; justify-content: space-between; font-size: 14px; padding: 7px 0; border-bottom: 1px solid var(--m50); }
 .receipt-row.total-row {
   border-top: 2px solid var(--g800); border-bottom: none;
   margin-top: 8px; padding-top: 12px;
-  font-family: 'Syne', sans-serif; font-weight: 800; font-size: 18px; color: var(--g800);
+  font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: var(--g800);
 }
 .receipt-actions { display: flex; gap: 10px; margin-top: 24px; }
 .receipt-actions button { flex: 1; }
@@ -820,7 +820,7 @@ footer { background: var(--g800); padding: clamp(48px,6vw,72px) clamp(16px,5vw,6
 .bk { font-size: 13px; color: var(--muted); font-weight: 500; flex-shrink: 0; }
 .bv { font-size: 14px; color: var(--g800); font-weight: 600; text-align: right; }
 .acct-num { display: flex; align-items: center; gap: 10px; font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 800; color: var(--g800); }
-.amount-accent { color: var(--m500); font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 800; }
+.amount-accent { color: var(--m500); font-family: 'Bricolage Grotesque', sans-serif; font-size: 18px; font-weight: 800; }
 
 .copy-btn {
   background: var(--g800); color: var(--white);
@@ -931,7 +931,7 @@ footer { background: var(--g800); padding: clamp(48px,6vw,72px) clamp(16px,5vw,6
   background: rgba(78,203,160,.85);
   color: var(--g800);
   font-size: 11px; font-weight: 700;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Bricolage Grotesque', sans-serif;
   padding: 3px 10px; border-radius: 99px;
   white-space: nowrap; letter-spacing: .03em;
 }
@@ -1032,7 +1032,7 @@ footer { background: var(--g800); padding: clamp(48px,6vw,72px) clamp(16px,5vw,6
 .camera-controls { display: flex; gap: 10px; width: 100%; }
 #start-camera-btn, #capture-btn {
   flex: 1; padding: 12px; border-radius: 10px; border: none;
-  font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px;
+  font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 14px;
   transition: all var(--transition);
 }
 #start-camera-btn { background: var(--m500); color: var(--g800); }
@@ -1060,7 +1060,7 @@ footer { background: var(--g800); padding: clamp(48px,6vw,72px) clamp(16px,5vw,6
   font-size: 10px; font-weight: 700; letter-spacing: .04em;
   background: var(--m100); color: var(--g700);
   border-radius: 99px; padding: 2px 7px;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Bricolage Grotesque', sans-serif;
 }
 
 /* Tips box */
